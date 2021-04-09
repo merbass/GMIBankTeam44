@@ -54,8 +54,11 @@ export const PasswordPage = (props: IUserPasswordProps) => {
               type="password"
               validate={{
                 required: { value: true, errorMessage: translate('global.messages.validate.newpassword.required') },
-                minLength: { value: 4, errorMessage: translate('global.messages.validate.newpassword.minlength') },
+                minLength: { value: 5, errorMessage: translate('global.messages.validate.newpassword.minlength') },
                 maxLength: { value: 50, errorMessage: translate('global.messages.validate.newpassword.maxlength') },
+                match: { value: "^(?!"+'currentPassword'+ "$)",
+                  errorMessage: translate('global.messages.error.oldmatch'),
+                }
               }}
               onChange={updatePassword}
             />

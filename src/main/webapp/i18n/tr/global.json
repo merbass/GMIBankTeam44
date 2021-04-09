@@ -44,8 +44,8 @@
       "username.placeholder": "Kullanıcı Adınız",
       "currentpassword.label": "Mevcut Şifre",
       "currentpassword.placeholder": "Mevcut Şifreniz",
-      "newpassword.label": "Yeni Şifre",
-      "newpassword.placeholder": "Yeni Şifreniz",
+      "newpassword.label": "Yeni Şifre. Lütfen Büyük harf, Küçük harf, sayı ve özel karakter kullanın",
+      "newpassword.placeholder": "Yeni Şifreniz. Ab%8kelime",
       "confirmpassword.label": "Yeni Şifre Tekrar",
       "confirmpassword.placeholder": "Yeni Şifreniz Tekrar",
       "email.label": "E-posta",
@@ -64,12 +64,13 @@
         }
       },
       "error": {
-        "dontmatch": "Şifreler eşleşmedi!"
+        "dontmatch": "Şifreler eşleşmedi!",
+        "oldmatch" : "Lütfen eski şifrenizi kullanmaktan kaçının!"
       },
       "validate": {
         "newpassword": {
           "required": "Şifre zorunlu alandır.",
-          "minlength": "Şifreniz en az 4 karakter olmak zorundadır",
+          "minlength": "Şifreniz en az 5 karakter olmak zorundadır",
           "maxlength": "Şifreniz 50 karakterden uzun olamaz",
           "strength": "Şifre karmaşıklığı:"
         },

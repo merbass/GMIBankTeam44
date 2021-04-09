@@ -44,8 +44,8 @@
       "username.placeholder": "Your username",
       "currentpassword.label": "Current password",
       "currentpassword.placeholder": "Current password",
-      "newpassword.label": "New password",
-      "newpassword.placeholder": "New password",
+      "newpassword.label": "New password. Please use upper case, lower case, number, and special character",
+      "newpassword.placeholder": "New password. Ab%8word",
       "confirmpassword.label": "New password confirmation",
       "confirmpassword.placeholder": "Confirm the new password",
       "email.label": "Email",
@@ -64,12 +64,13 @@
         }
       },
       "error": {
-        "dontmatch": "The password and its confirmation do not match!"
+        "dontmatch": "The password and its confirmation do not match!",
+        "oldmatch" : "Please, avoid using your old password!"
       },
       "validate": {
         "newpassword": {
           "required": "Your password is required.",
-          "minlength": "Your password is required to be at least 4 characters.",
+          "minlength": "Your password is required to be at least 5 characters.",
           "maxlength": "Your password cannot be longer than 50 characters.",
           "strength": "Password strength:"
         },
