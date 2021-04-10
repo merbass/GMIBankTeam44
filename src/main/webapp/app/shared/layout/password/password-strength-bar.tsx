@@ -26,7 +26,7 @@ export const PasswordStrengthBar = ({ password }: IPasswordStrengthBarProps) => 
     force += passedMatches * 10;
 
     // penalty (short password)
-    force = p.length <= 4 ? Math.min(force, 10) : force;
+    force = p.length <= 1 ? Math.min(force, 10) : force;
 
     // penalty (poor variety of characters)
     force = passedMatches === 1 ? Math.min(force, 20) : force;
