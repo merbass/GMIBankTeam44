@@ -65,9 +65,12 @@
       },
       "error": {
         "dontmatch": "The password and its confirmation do not match!",
-        "oldmatch" : "Please, avoid using your old password!"
+        "oldmatch" : "Please, avoid creating new password similar to old one!"
       },
       "validate": {
+        "currentpassword": {
+          "required": "Please enter your current password to proceed."
+        },
         "newpassword": {
           "required": "Your password is required.",
           "minlength": "Your password is required to be at least 5 characters.",

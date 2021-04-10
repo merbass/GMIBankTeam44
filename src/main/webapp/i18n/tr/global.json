@@ -65,9 +65,12 @@
       },
       "error": {
         "dontmatch": "Şifreler eşleşmedi!",
-        "oldmatch" : "Lütfen eski şifrenizi kullanmaktan kaçının!"
+        "oldmatch" : "Lütfen eskisine benzer yeni şifre oluşturmaktan kaçının!"
       },
       "validate": {
+        "currentpassword": {
+          "required": "Devam etmek için lütfen mevcut şifrenizi girin."
+        },
         "newpassword": {
           "required": "Şifre zorunlu alandır.",
           "minlength": "Şifreniz en az 5 karakter olmak zorundadır",
