@@ -28,6 +28,17 @@ export const RegisterPage = (props: IRegisterProps) => {
 
   const updatePassword = event => setPassword(event.target.value);
 
+  function phoneFormat(mobilephone){
+    let phone = mobilephone.replace(/[^\d-]/g, ''); // "/[^\d-]/g", this is JavaScript Regular Expression
+    phone = phone.replace(/^(\d{3})-?(\d{3})/, '$1-$2'); // first dash   
+    phone = phone.replace(/^(\d{3})-?(\d{3})-?(\d{1,4})/, '$1-$2-$3'); // second dash
+  }
+
+  function phoneDash(){
+    const phoneValue = document.getElementById('mobilephone').value;
+    document.getElementById('mobilephone').value = phoneFormat(phoneValue);
+  }
+
   return (
     <div>
       <Row className="justify-content-center">
@@ -78,14 +89,18 @@ export const RegisterPage = (props: IRegisterProps) => {
 
           <AvField
               name="mobilephone"
-              label="Mobile Phone Number"
-              placeholder="000-000-0000"
+              label={translate('global.form.mobilephone.label')}
+              placeholder={translate('global.form.mobilephone.placeholder')}
               validate={{
+                required: { value: true, errorMessage: translate('register.messages.validate.mobilephone.required')},
                 pattern: {
                   value: '[0-9]{3}-[0-9]{3}-[0-9]{4}',
-                  errorMessage: "Your mobile phone number is invalid",
-                }
+                  errorMessage: translate('global.messages.validate.mobilephone.pattern'),
+                },
+                maxLength: { value: 12, errorMessage: translate('global.messages.validate.mobilephone.maxlength') },
+                minLength: { value: 12, errorMessage: translate('global.messages.validate.mobilephone.minlength') },
               }}
+              onKeyUp={phoneDash}
             />
 
             <AvField

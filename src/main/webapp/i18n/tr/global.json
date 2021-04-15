@@ -49,7 +49,9 @@
       "confirmpassword.label": "Yeni Şifre Tekrar",
       "confirmpassword.placeholder": "Yeni Şifreniz Tekrar",
       "email.label": "E-posta",
-      "email.placeholder": "E-posta adresiniz"
+      "email.placeholder": "E-posta adresiniz",
+      "mobilephone.label": "Telefon Numarası",
+      "mobilephone.placeholder": "Lütfen telefon numaranızı giriniz."
     },
     "messages": {
       "info": {
@@ -83,7 +85,14 @@
           "invalid": "E-posta alanı uygun değil.",
           "minlength": "E-posta adresi en az 5 karakter olmalıdır",
           "maxlength": "E-posta adresi 50 karakterden fazla olamaz"
-        }
+        },
+        "mobilephone": {
+          "required": "Telefon numarası zorunlu alandır.",
+          "invalid": "Telefon numarası alanı uygun değil.",
+          "pattern": "Telefon numarası alanı uygun değil.",
+          "maxlength": "Telefon numarası alanı 10 numaradan fazla olamaz.",
+          "minlengt": "Telefon numarası alanı 10 numaradan az olamaz."
+      }
       }
     },
     "field": {
